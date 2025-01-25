@@ -1,5 +1,6 @@
-package br.com.kotlin
+package br.com.kotlin.controller
 
+import br.com.kotlin.dto.Greeting
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
