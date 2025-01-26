@@ -1,12 +1,11 @@
 package br.com.kotlin.controller
 
-import br.com.kotlin.exceptions.UnsupportedMathOperationException
+import br.com.kotlin.exception.UnsupportedMathOperationException
 import br.com.kotlin.service.MathService
 import br.com.kotlin.service.NumberService
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.PathVariable
-import kotlin.math.sqrt
 
 @RestController
 class MathController {

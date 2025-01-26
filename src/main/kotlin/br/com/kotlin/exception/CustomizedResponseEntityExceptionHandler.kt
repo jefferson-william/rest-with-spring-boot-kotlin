@@ -1,4 +1,4 @@
-package br.com.kotlin.exceptions
+package br.com.kotlin.exception
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
