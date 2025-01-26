@@ -1,0 +1,15 @@
+{
+	"Servers": {
+		"1": {
+			"Name": "kotlin",
+			"Group": "local",
+			"Host": "kotlin",
+			"Port": 5432,
+			"MaintenanceDB": "postgres",
+			"Username": "postgres",
+			"Password": "bitnami",
+			"SSLMode": "prefer",
+			"Comment": ""
+		}
+	}
+}

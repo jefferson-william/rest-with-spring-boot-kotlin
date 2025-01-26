@@ -2,11 +2,11 @@ package br.com.kotlin.repository.mock
 
 import br.com.kotlin.data.PersonRepository
 import br.com.kotlin.model.Person
-import org.springframework.stereotype.Service
+import org.springframework.stereotype.Repository
 import java.util.concurrent.atomic.AtomicLong
 import java.util.logging.Logger
 
-@Service("PersonMockRepository")
+@Repository("PersonMockRepository")
 class PersonMockRepository : PersonRepository {
     private val counter: AtomicLong = AtomicLong()
     private val logger = Logger.getLogger(PersonMockRepository::class.java.name)
