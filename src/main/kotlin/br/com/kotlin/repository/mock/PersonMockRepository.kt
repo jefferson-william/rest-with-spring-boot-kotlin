@@ -33,6 +33,17 @@ class PersonMockRepository : PersonRepository {
         return persons
     }
 
+    override fun create(person: Person): Person {
+        return person
+    }
+
+    override fun update(person: Person): Person {
+        return person
+    }
+
+    override fun delete(id: Long) {
+    }
+
     private fun mockPerson(i: Int): Person {
         return Person(
             counter.incrementAndGet(),
