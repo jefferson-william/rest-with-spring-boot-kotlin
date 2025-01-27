@@ -7,23 +7,23 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Column
 
-@Entity
-@Table(name = "Person")
+@Entity(name = "person")
+@Table(name = "person")
 data class Person (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "firstName", nullable = false, length = 255)
     var firstName: String = "",
     
-    @Column(nullable = false, length = 255)
+    @Column(name = "lastName", nullable = false, length = 255)
     var lastName: String = "",
 
-    @Column(nullable = false, length = 255)
+    @Column(name = "address", nullable = false, length = 255)
     var address: String = "",
  
-    @Column(nullable = false, length = 255)
+    @Column(name = "gender", nullable = false, length = 255)
     var gender: String = "",
 ) {
 }
