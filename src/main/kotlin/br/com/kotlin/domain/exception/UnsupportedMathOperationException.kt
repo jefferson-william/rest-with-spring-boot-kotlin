@@ -1,4 +1,4 @@
-package br.com.kotlin.exception
+package br.com.kotlin.domain.exception
 
 import java.lang.RuntimeException
 

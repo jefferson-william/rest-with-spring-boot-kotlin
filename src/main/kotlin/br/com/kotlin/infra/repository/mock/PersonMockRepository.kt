@@ -1,7 +1,7 @@
-package br.com.kotlin.repository.mock
+package br.com.kotlin.infra.repository.mock
 
 import br.com.kotlin.data.PersonRepository
-import br.com.kotlin.model.Person
+import br.com.kotlin.domain.model.Person
 import org.springframework.stereotype.Repository
 import java.util.concurrent.atomic.AtomicLong
 import java.util.logging.Logger

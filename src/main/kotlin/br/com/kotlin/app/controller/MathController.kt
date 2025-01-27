@@ -1,8 +1,8 @@
-package br.com.kotlin.controller
+package br.com.kotlin.app.controller
 
-import br.com.kotlin.exception.UnsupportedMathOperationException
-import br.com.kotlin.service.MathService
-import br.com.kotlin.service.NumberService
+import br.com.kotlin.domain.exception.UnsupportedMathOperationException
+import br.com.kotlin.domain.service.MathService
+import br.com.kotlin.domain.service.NumberService
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.PathVariable

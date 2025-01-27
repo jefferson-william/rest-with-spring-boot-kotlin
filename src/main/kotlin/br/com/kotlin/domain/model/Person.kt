@@ -1,4 +1,4 @@
-package br.com.kotlin.model
+package br.com.kotlin.domain.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Table

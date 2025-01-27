@@ -1,4 +1,4 @@
-package br.com.kotlin.service
+package br.com.kotlin.domain.service
 
 import kotlin.math.sqrt
 

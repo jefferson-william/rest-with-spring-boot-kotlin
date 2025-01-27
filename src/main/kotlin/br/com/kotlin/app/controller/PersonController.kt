@@ -1,7 +1,7 @@
-package br.com.kotlin.controller
+package br.com.kotlin.app.controller
 
-import br.com.kotlin.model.Person
-import br.com.kotlin.repository.postgres.PersonPostgresRepository
+import br.com.kotlin.domain.model.Person
+import br.com.kotlin.infra.repository.postgres.PersonPostgresRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity

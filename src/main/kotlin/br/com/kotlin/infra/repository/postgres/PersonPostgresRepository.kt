@@ -1,8 +1,8 @@
-package br.com.kotlin.repository.postgres
+package br.com.kotlin.infra.repository.postgres
 
-import br.com.kotlin.exception.ResourceNotFoundException
-import br.com.kotlin.model.Person
-import br.com.kotlin.repository.PersonDatabaseRepository
+import br.com.kotlin.domain.exception.ResourceNotFoundException
+import br.com.kotlin.domain.model.Person
+import br.com.kotlin.data.PersonDatabaseRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Repository
 import java.util.logging.Logger
@@ -15,13 +15,12 @@ class PersonPostgresRepository {
 
     fun findById(id: Long): Person {
         logger.info("Finding one person!")
-        return repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!")})
+        return repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!") })
     }
 
     fun findAll(): List<Person> {
         logger.info("Finding all people!")
-        val persons = repository.findAll()
-        return persons
+        return repository.findAll()
     }
 
     fun create(person: Person): Person {
@@ -29,7 +28,7 @@ class PersonPostgresRepository {
     }
 
     fun update(id: Long, payload: Person): Person {
-        val person = repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!")})
+        val person = repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!") })
         person.firstName = payload.firstName
         person.lastName = payload.lastName
         person.address = payload.address
@@ -38,7 +37,7 @@ class PersonPostgresRepository {
     }
 
     fun delete(id: Long) {
-        val person = repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!")})
+        val person = repository.findById(id).orElseThrow({ ResourceNotFoundException("No records found for this identifier!") })
         repository.delete(person)
     }
 }

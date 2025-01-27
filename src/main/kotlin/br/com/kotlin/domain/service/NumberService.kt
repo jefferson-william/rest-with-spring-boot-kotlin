@@ -1,4 +1,4 @@
-package br.com.kotlin.service
+package br.com.kotlin.domain.service
 
 object NumberService {
     fun convertToDouble(strNumber: String?): Double {
