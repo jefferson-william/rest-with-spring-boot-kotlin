@@ -17,6 +17,9 @@ dev:
 run:
 	mvn spring-boot:run
 
+test:
+	mvn test
+
 reset:
 	docker compose rm --stop
 	docker volume rm rest-with-spring-boot-kotlin_kotlin_postgres_data
