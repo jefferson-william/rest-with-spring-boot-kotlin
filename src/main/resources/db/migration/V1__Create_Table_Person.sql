@@ -1,7 +1,7 @@
 CREATE TABLE public.person (
     id bigint NOT NULL,
-    firstName character varying(255) NOT NULL,
-    lastName character varying(255) NOT NULL,
+    first_name character varying(255) NOT NULL,
+    last_name character varying(255) NOT NULL,
     address character varying(255) NOT NULL,
     gender character varying(255) NOT NULL
 );
