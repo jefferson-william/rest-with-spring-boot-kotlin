@@ -6,8 +6,13 @@ spring:
     username: postgres
     password:
     driver-class-name: org.postgresql.Driver
+  flyway:
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password:
+    locations: classpath:db/migration
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     open-in-view: false
     show-sql: true

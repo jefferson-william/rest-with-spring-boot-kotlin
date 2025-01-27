@@ -15,14 +15,16 @@ dev:
 	mvn spring-boot:run
 
 run:
-	mvn spring-boot:run
+	mvn spring-boot:run -DskipTests
 
 test:
 	mvn test
 
+migrate:
+	mvn flyway:migrate
+
 reset:
-	docker compose rm --stop
-	docker volume rm rest-with-spring-boot-kotlin_kotlin_postgres_data
+	docker compose rm --stop --volumes
 	docker compose up -d
-	sleep 2
+	sleep 1
 	make create
