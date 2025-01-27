@@ -2,7 +2,7 @@ spring:
   application:
       name: rest-with-spring-boot-kotlin
   datasource:
-    url: jdbc:postgresql://localhost:5432/kotlin
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password:
     driver-class-name: org.postgresql.Driver
