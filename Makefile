@@ -8,6 +8,9 @@ up:
 	docker compose stop
 	docker compose up
 
+stop:
+	docker compose stop
+
 create:
 	docker compose exec postgres psql -U postgres -tc "SELECT 1 FROM pg_database WHERE datname = 'postgres'" | grep -q 1 || docker compose exec postgres psql -U postgres -c "CREATE DATABASE postgres;"
 
